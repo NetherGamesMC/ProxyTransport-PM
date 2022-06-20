@@ -5,7 +5,7 @@ on: push
 jobs:
   phpstan:
     name: PHPStan Analysis
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
 
     steps:
