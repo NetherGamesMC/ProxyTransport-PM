@@ -9,6 +9,8 @@ jobs:
     if: "contains(github.event.head_commit.message, '[Build]')"
     
     steps:
+      - name: Startup
+        uses: actions/checkout@v3
       - name: Checkout PharBuilder
         uses: actions/checkout@v3
         with:

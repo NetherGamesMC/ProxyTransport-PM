@@ -9,6 +9,8 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
 
     steps:
+      - name: Startup
+        uses: actions/checkout@v3
       - name: Download PHP Release
         uses: dsaltares/fetch-gh-release-asset@1.0.0
         with:
