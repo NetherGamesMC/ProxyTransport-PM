@@ -1,0 +1,27 @@
+{
+  "name": "nethergamesmc/proxytransport",
+  "description": "Transport layer extension for PMMP to utilize raw TCP instead of RakNet",
+  "license": "GPL-3.0-or-later",
+  "type": "project",
+  "require": {
+    "php": "^8.0",
+    "ext-pthreads": "*",
+    "ext-sockets": "*",
+    "nethergamesmc/libproxy": "dev-master"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "1.7.14"
+  },
+  "repositories": [
+    { "type": "vcs", "url": "git@github.com:NetherGamesMC/libproxy.git" }
+  ],
+  "autoload": {
+    "psr-4": {
+      "": ["src"]
+    },
+    "files": [
+      "src/NetherGames/NGEssentials/CoreConstants.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
