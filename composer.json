@@ -7,6 +7,7 @@
     "php": "^8.0",
     "ext-pthreads": "*",
     "ext-sockets": "*",
+    "pocketmine/pocketmine-mp": "dev-stable",
     "nethergamesmc/libproxy": "dev-master"
   },
   "require-dev": {
