@@ -18,7 +18,10 @@
   "autoload": {
     "psr-4": {
       "": ["src"]
-    }
+    },
+    "files": [
+      "src/NetherGames/ProxyTransport/CoreConstants.php"
+    ]
   },
   "minimum-stability": "dev"
 }

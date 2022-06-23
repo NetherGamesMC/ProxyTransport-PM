@@ -10,6 +10,8 @@ use function is_file;
 use function pocketmine\critical_error;
 use const nethergames\COMPOSER_AUTOLOADER_PATH;
 
+require_once 'CoreConstants.php';
+
 class ProxyTransport extends PluginBase
 {
 
