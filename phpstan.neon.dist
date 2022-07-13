@@ -4,3 +4,5 @@ parameters:
         - src
     bootstrapFiles:
         - phar://PharBuilder/PocketMine-MP.phar/vendor/autoload.php
+    scanDirectories:
+        - phar://PharBuilder/PocketMine-MP.phar
