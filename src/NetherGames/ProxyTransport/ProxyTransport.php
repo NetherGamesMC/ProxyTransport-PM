@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace NetherGames\ProxyTransport;
 
 use libproxy\ProxyNetworkInterface;
+use NetherGames\ProxyTransport\tasks\ComposerRegisterAsyncTask;
 use pocketmine\plugin\PluginBase;
 use function date_default_timezone_set;
 use function is_file;
@@ -21,6 +22,11 @@ class ProxyTransport extends PluginBase
 
         if (is_file(COMPOSER_AUTOLOADER_PATH)) {
             require_once(COMPOSER_AUTOLOADER_PATH);
+
+            $asyncPool = $this->getServer()->getAsyncPool();
+            $asyncPool->addWorkerStartHook(function (int $workerId) use ($asyncPool): void {
+                $asyncPool->submitTaskToWorker(new ComposerRegisterAsyncTask(), $workerId);
+            });
         } else {
             critical_error("Composer autoloader not found at " . COMPOSER_AUTOLOADER_PATH);
             critical_error("Please install/update Composer dependencies or use provided builds.");
