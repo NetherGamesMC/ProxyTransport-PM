@@ -16,7 +16,7 @@ jobs:
         with:
           file: Linux.zip
           repo: NetherGamesMC/php-build-scripts
-          version: "tags/8.0"
+          version: "tags/8.1"
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Unpack PHP Release
         run: unzip Linux.zip && tar -xzvf PHP_Linux-x86_64.tar.gz
