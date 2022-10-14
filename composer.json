@@ -10,7 +10,7 @@
     "nethergamesmc/libproxy": "dev-master"
   },
   "require-dev": {
-    "phpstan/phpstan": "1.8.8"
+    "phpstan/phpstan": "1.8.9"
   },
   "repositories": [
     { "type": "vcs", "url": "git@github.com:NetherGamesMC/libproxy.git" }
