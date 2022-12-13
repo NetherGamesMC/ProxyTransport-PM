@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Auto Merge Dependabot
 
 on:
   pull_request_target:
@@ -9,12 +9,12 @@ on:
       - synchronize
 
 jobs:
-  merge-me:
-    name: Merge me!
+  automerge:
     runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: write
+      contents: write
+
     steps:
-      - name: Merge me!
-        uses: ridedott/merge-me-action@v2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    timeout-minutes: 5
+      - uses: fastify/github-action-merge-dependabot@v3
