@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cca244ec64c28d59e886e371f026380b",
+    "content-hash": "fada909bf934207f44b06e643fd69b2e",
     "packages": [
         {
             "name": "nethergamesmc/libproxy",
@@ -49,16 +49,16 @@
     "packages-dev": [
         {
             "name": "phpstan/phpstan",
-            "version": "1.9.18",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "f2d5cf71be91172a57c649770b73c20ebcffb0bf"
+                "reference": "71b28a67f01ac231f9a8f1ce242270bf4ec1f99c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f2d5cf71be91172a57c649770b73c20ebcffb0bf",
-                "reference": "f2d5cf71be91172a57c649770b73c20ebcffb0bf",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/71b28a67f01ac231f9a8f1ce242270bf4ec1f99c",
+                "reference": "71b28a67f01ac231f9a8f1ce242270bf4ec1f99c",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.9.18"
+                "source": "https://github.com/phpstan/phpstan/tree/1.10.0"
             },
             "funding": [
                 {
@@ -104,7 +104,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-17T15:01:27+00:00"
+            "time": "2023-02-21T13:50:49+00:00"
         }
     ],
     "aliases": [],
