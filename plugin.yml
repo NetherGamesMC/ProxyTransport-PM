@@ -1,5 +1,5 @@
 name: ProxyTransport
 version: 1.0
 main: NetherGames\ProxyTransport\ProxyTransport
-api: [4.0.0]
+api: [4.18.0]
 author: NetherGamesMC
