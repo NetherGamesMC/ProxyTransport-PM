@@ -882,16 +882,16 @@
         },
         {
             "name": "pocketmine/pocketmine-mp",
-            "version": "4.19.2",
+            "version": "4.19.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmmp/PocketMine-MP.git",
-                "reference": "a534ac759ab1d13c50de8f5728ed28612a6dd019"
+                "reference": "11e34b3e5cdab7639031d8af53aeacf0242ab487"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/a534ac759ab1d13c50de8f5728ed28612a6dd019",
-                "reference": "a534ac759ab1d13c50de8f5728ed28612a6dd019",
+                "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/11e34b3e5cdab7639031d8af53aeacf0242ab487",
+                "reference": "11e34b3e5cdab7639031d8af53aeacf0242ab487",
                 "shasum": ""
             },
             "require": {
@@ -968,7 +968,7 @@
             "homepage": "https://pmmp.io",
             "support": {
                 "issues": "https://github.com/pmmp/PocketMine-MP/issues",
-                "source": "https://github.com/pmmp/PocketMine-MP/tree/4.19.2"
+                "source": "https://github.com/pmmp/PocketMine-MP/tree/4.19.3"
             },
             "funding": [
                 {
@@ -980,7 +980,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-04-14T17:43:41+00:00"
+            "time": "2023-04-21T14:53:02+00:00"
         },
         {
             "name": "pocketmine/raklib",
@@ -1202,12 +1202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "60a4c63ab724854332900504274f6150ff26d286"
+                "reference": "2916d00d2c063cf528d267a60774ada0dfaf20c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/60a4c63ab724854332900504274f6150ff26d286",
-                "reference": "60a4c63ab724854332900504274f6150ff26d286",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/2916d00d2c063cf528d267a60774ada0dfaf20c8",
+                "reference": "2916d00d2c063cf528d267a60774ada0dfaf20c8",
                 "shasum": ""
             },
             "require": {
@@ -1275,7 +1275,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "source": "https://github.com/ramsey/uuid/tree/4.7.4"
+                "source": "https://github.com/ramsey/uuid/tree/4.x"
             },
             "funding": [
                 {
@@ -1287,7 +1287,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-15T23:01:58+00:00"
+            "time": "2023-04-17T22:02:26+00:00"
         },
         {
             "name": "symfony/filesystem",
