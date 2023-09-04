@@ -10,9 +10,9 @@ jobs:
     
     steps:
       - name: Startup
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Checkout PharBuilder
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: NetherGamesMC/PharBuilder
           token: ${{ secrets.ng_token }}
