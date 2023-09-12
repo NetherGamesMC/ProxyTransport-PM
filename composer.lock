@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetherGamesMC/libproxy.git",
-                "reference": "ba7ebf83b6fb28231705e71d8c431bdcbecc1a83"
+                "reference": "d945ac11dcf2e74911c88841da4bab08df97db30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetherGamesMC/libproxy/zipball/ba7ebf83b6fb28231705e71d8c431bdcbecc1a83",
-                "reference": "ba7ebf83b6fb28231705e71d8c431bdcbecc1a83",
+                "url": "https://api.github.com/repos/NetherGamesMC/libproxy/zipball/d945ac11dcf2e74911c88841da4bab08df97db30",
+                "reference": "d945ac11dcf2e74911c88841da4bab08df97db30",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 "source": "https://github.com/NetherGamesMC/libproxy/tree/pm5",
                 "issues": "https://github.com/NetherGamesMC/libproxy/issues"
             },
-            "time": "2023-09-12T15:51:24+00:00"
+            "time": "2023-09-12T16:01:55+00:00"
         }
     ],
     "packages-dev": [
