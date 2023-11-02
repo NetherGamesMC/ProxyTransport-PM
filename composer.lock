@@ -719,16 +719,16 @@
         },
         {
             "name": "pocketmine/pocketmine-mp",
-            "version": "5.7.0",
+            "version": "5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmmp/PocketMine-MP.git",
-                "reference": "22b9e70372ff1c766a7c90af7ef1ecdcc6d920d1"
+                "reference": "75a39491be5a807f35286de025afa0a56faf1efb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/22b9e70372ff1c766a7c90af7ef1ecdcc6d920d1",
-                "reference": "22b9e70372ff1c766a7c90af7ef1ecdcc6d920d1",
+                "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/75a39491be5a807f35286de025afa0a56faf1efb",
+                "reference": "75a39491be5a807f35286de025afa0a56faf1efb",
                 "shasum": ""
             },
             "require": {
@@ -779,7 +779,7 @@
                 "symfony/filesystem": "~6.3.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "1.10.39",
+                "phpstan/phpstan": "1.10.40",
                 "phpstan/phpstan-phpunit": "^1.1.0",
                 "phpstan/phpstan-strict-rules": "^1.2.0",
                 "phpunit/phpunit": "~10.3.0 || ~10.2.0 || ~10.1.0"
@@ -801,7 +801,7 @@
             "homepage": "https://pmmp.io",
             "support": {
                 "issues": "https://github.com/pmmp/PocketMine-MP/issues",
-                "source": "https://github.com/pmmp/PocketMine-MP/tree/5.7.0"
+                "source": "https://github.com/pmmp/PocketMine-MP/tree/5.8.1"
             },
             "funding": [
                 {
@@ -813,7 +813,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-10-26T11:51:45+00:00"
+            "time": "2023-11-01T17:55:22+00:00"
         },
         {
             "name": "pocketmine/raklib",
@@ -1365,5 +1365,5 @@
         "ext-sockets": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
