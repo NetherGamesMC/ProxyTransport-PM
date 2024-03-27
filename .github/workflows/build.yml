@@ -11,22 +11,15 @@ jobs:
     steps:
       - name: Startup
         uses: actions/checkout@v4
-      - name: Checkout PharBuilder
-        uses: actions/checkout@v4
-        with:
-          repository: NetherGamesMC/PharBuilder
-          token: ${{ secrets.ng_token }}
-          path: PharBuilder
-          ref: pm5
       - name: Download PHP Release
         uses: dsaltares/fetch-gh-release-asset@1.1.1
         with:
-          file: Linux.zip
+          file: PHP-Linux-x86_64-PM5.tar.gz
           repo: NetherGamesMC/php-build-scripts
-          version: "tags/8.2-pm5"
+          version: "tags/php-8.3-latest"
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Unpack PHP Release
-        run: unzip Linux.zip && tar -xzvf PHP_Linux-x86_64.tar.gz
+        run: tar -xzvf PHP-Linux-x86_64-PM5.tar.gz
       - name: Download Composer
         run: curl -o ./bin/composer.phar "https://getcomposer.org/composer-stable.phar"
       - name: Install Composer dependencies
@@ -42,10 +35,10 @@ jobs:
         run: |
           echo Building...
           chmod +x pharbuilder
-          ./pharbuilder -i . -o PharBuilder/ProxyTransport.phar
+          ./pharbuilder -i . -o ./ProxyTransport.phar
           echo Build completed!
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
           name: ProxyTransport
-          path: PharBuilder/ProxyTransport.phar
+          path: ProxyTransport.phar

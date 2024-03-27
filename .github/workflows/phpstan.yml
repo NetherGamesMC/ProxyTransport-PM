@@ -14,12 +14,12 @@ jobs:
       - name: Download PHP Release
         uses: dsaltares/fetch-gh-release-asset@1.1.1
         with:
-          file: Linux.zip
+          file: PHP-Linux-x86_64-PM5.tar.gz
           repo: NetherGamesMC/php-build-scripts
-          version: "tags/8.2-pm5"
+          version: "tags/php-8.3-latest"
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Unpack PHP Release
-        run: unzip Linux.zip && tar -xzvf PHP_Linux-x86_64.tar.gz
+        run: tar -xzvf PHP-Linux-x86_64-PM5.tar.gz
       - name: Download Composer
         run: curl -o composer.phar "https://getcomposer.org/composer-stable.phar"
       - name: Install Composer dependencies
