@@ -12,7 +12,7 @@ jobs:
       - name: Startup
         uses: actions/checkout@v4
       - name: Download PHP Release
-        uses: dsaltares/fetch-gh-release-asset@1.1.1
+        uses: dsaltares/fetch-gh-release-asset@1.1.2
         with:
           file: PHP-Linux-x86_64-PM5.tar.gz
           repo: NetherGamesMC/php-build-scripts
