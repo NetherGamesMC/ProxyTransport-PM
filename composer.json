@@ -10,7 +10,7 @@
     "nethergamesmc/libproxy": "dev-pm5"
   },
   "require-dev": {
-    "phpstan/phpstan": "1.11.0",
+    "phpstan/phpstan": "1.11.1",
     "pocketmine/pocketmine-mp": "^5.0.0-ALPHA7"
   },
   "repositories": [
