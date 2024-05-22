@@ -39,7 +39,7 @@ jobs:
           ./pharbuilder -i . -o ./ProxyTransport.phar
           echo Build completed!
       - name: Upload
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ProxyTransport
           path: ProxyTransport.phar
