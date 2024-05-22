@@ -1,5 +1,5 @@
 # ProxyTransport-PM
-Transport layer extension for PMMP to utilize raw TCP instead of RakNet
+Transport layer extension for PMMP to utilize raw QUIC instead of RakNet
 
 This can be used as a library or as a plugin.
 
