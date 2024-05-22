@@ -5,15 +5,16 @@
   "type": "project",
   "require": {
     "php": "^8.1",
-    "ext-pthreads": "^5.1",
+    "ext-pmmpthread": "^6.0.1",
     "ext-sockets": "*",
     "nethergamesmc/libproxy": "dev-pm5"
   },
   "require-dev": {
     "phpstan/phpstan": "1.10.8",
-    "pocketmine/pocketmine-mp": "^5.0.0-BETA1"
+    "nethergamesmc/pocketmine-mp": "dev-stable"
   },
   "repositories": [
+    { "type": "vcs", "url": "git@github.com:NetherGamesMC/PocketMine-MP.git" },
     { "type": "vcs", "url": "git@github.com:NetherGamesMC/libproxy.git" }
   ],
   "autoload": {
