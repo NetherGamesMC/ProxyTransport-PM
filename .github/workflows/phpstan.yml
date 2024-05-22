@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Startup
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install FFI
         run: sudo apt install -y libffi7
       - name: Download PHP Release
