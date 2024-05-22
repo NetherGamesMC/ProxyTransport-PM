@@ -5,6 +5,10 @@ namespace NetherGames\ProxyTransport;
 
 use libproxy\ProxyNetworkInterface;
 use NetherGames\ProxyTransport\tasks\ComposerRegisterAsyncTask;
+use pocketmine\event\EventPriority;
+use pocketmine\event\server\NetworkInterfaceRegisterEvent;
+use pocketmine\network\mcpe\raklib\RakLibInterface;
+use pocketmine\network\query\DedicatedQueryNetworkInterface;
 use pocketmine\plugin\PluginBase;
 use function date_default_timezone_set;
 use function is_file;
@@ -38,6 +42,13 @@ class ProxyTransport extends PluginBase
     public function onEnable(): void
     {
         $server = $this->getServer();
+        $server->getPluginManager()->registerEvent(NetworkInterfaceRegisterEvent::class, function(NetworkInterfaceRegisterEvent $event): void{
+            $interface = $event->getInterface();
+            if($interface instanceof RakLibInterface || $interface instanceof DedicatedQueryNetworkInterface){
+                $event->cancel();
+            }
+        }, EventPriority::MONITOR, $this);
+
         $server->getNetwork()->registerInterface(
             new ProxyNetworkInterface($this, $server->getPort(), COMPOSER_AUTOLOADER_PATH)
         );

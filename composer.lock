@@ -4,31 +4,181 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a16594310cef38713c4fa61ba8a855e",
+    "content-hash": "9ad8cc813c22bb88a804bad18e44d15d",
     "packages": [
         {
-            "name": "nethergamesmc/libproxy",
-            "version": "dev-tcp",
+            "name": "ircmaxell/ffime",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/NetherGamesMC/libproxy.git",
-                "reference": "65f2afd4978beb06799c88f9707e8774a756f40f"
+                "url": "https://github.com/ircmaxell/FFIMe.git",
+                "reference": "0b7fb71209b192e55a61ec2fb33a932a561dd82a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetherGamesMC/libproxy/zipball/65f2afd4978beb06799c88f9707e8774a756f40f",
-                "reference": "65f2afd4978beb06799c88f9707e8774a756f40f",
+                "url": "https://api.github.com/repos/ircmaxell/FFIMe/zipball/0b7fb71209b192e55a61ec2fb33a932a561dd82a",
+                "reference": "0b7fb71209b192e55a61ec2fb33a932a561dd82a",
+                "shasum": ""
+            },
+            "require": {
+                "ircmaxell/php-c-parser": "dev-master",
+                "ircmaxell/php-object-symbolresolver": "dev-master",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FFIMe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Ferrara",
+                    "email": "ircmaxell@gmail.com"
+                },
+                {
+                    "name": "Bob Weinand",
+                    "email": "bobwei9@hotmail.com"
+                }
+            ],
+            "description": "Make life easy when working with FFI",
+            "support": {
+                "issues": "https://github.com/ircmaxell/FFIMe/issues",
+                "source": "https://github.com/ircmaxell/FFIMe/tree/master"
+            },
+            "time": "2024-01-02T20:37:51+00:00"
+        },
+        {
+            "name": "ircmaxell/php-c-parser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ircmaxell/php-c-parser.git",
+                "reference": "365c52d4c28deed279fef35958488b2a7c382b3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ircmaxell/php-c-parser/zipball/365c52d4c28deed279fef35958488b2a7c382b3b",
+                "reference": "365c52d4c28deed279fef35958488b2a7c382b3b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "ircmaxell/php-yacc": "dev-master",
+                "phpunit/phpunit": "^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPCParser\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Ferrara",
+                    "email": "ircmaxell@gmail.com"
+                },
+                {
+                    "name": "Bob Weinand",
+                    "email": "bobwei9@hotmail.com"
+                }
+            ],
+            "description": "Parse C when using PHP",
+            "support": {
+                "issues": "https://github.com/ircmaxell/php-c-parser/issues",
+                "source": "https://github.com/ircmaxell/php-c-parser/tree/master"
+            },
+            "time": "2023-10-14T16:23:09+00:00"
+        },
+        {
+            "name": "ircmaxell/php-object-symbolresolver",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ircmaxell/php-object-symbolresolver.git",
+                "reference": "ca63994ee21e0104fdcd1058d22492e697dec4b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ircmaxell/php-object-symbolresolver/zipball/ca63994ee21e0104fdcd1058d22492e697dec4b6",
+                "reference": "ca63994ee21e0104fdcd1058d22492e697dec4b6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPObjectSymbolResolver\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Ferrara",
+                    "email": "ircmaxell@gmail.com"
+                },
+                {
+                    "name": "Bob Weinand",
+                    "email": "bobwei9@hotmail.com"
+                },
+                {
+                    "name": "Shane Thompson",
+                    "email": "me@shane.pt"
+                }
+            ],
+            "description": "An object file (ELF, Mach-O, PE) parser",
+            "support": {
+                "issues": "https://github.com/ircmaxell/php-object-symbolresolver/issues",
+                "source": "https://github.com/ircmaxell/php-object-symbolresolver/tree/master"
+            },
+            "time": "2024-05-20T15:05:20+00:00"
+        },
+        {
+            "name": "nethergamesmc/libproxy",
+            "version": "dev-quic",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetherGamesMC/libproxy.git",
+                "reference": "abd54ff3a19e5b478f312bd8fd6a03b7ea96050b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetherGamesMC/libproxy/zipball/abd54ff3a19e5b478f312bd8fd6a03b7ea96050b",
+                "reference": "abd54ff3a19e5b478f312bd8fd6a03b7ea96050b",
                 "shasum": ""
             },
             "require": {
                 "ext-pmmpthread": "^6.0.1",
                 "ext-sockets": "*",
+                "nethergamesmc/quiche": "dev-master",
                 "php": "^8.0"
             },
             "require-dev": {
                 "nethergamesmc/pocketmine-mp": "dev-stable",
-                "phpstan/phpstan": "1.10.21"
+                "phpstan/phpstan": "1.11.1"
             },
+            "default-branch": true,
             "type": "project",
             "autoload": {
                 "psr-4": {
@@ -40,10 +190,54 @@
             ],
             "description": "An TCP proxy library for PocketMine-MP",
             "support": {
-                "source": "https://github.com/NetherGamesMC/libproxy/tree/tcp",
+                "source": "https://github.com/NetherGamesMC/libproxy/tree/quic",
                 "issues": "https://github.com/NetherGamesMC/libproxy/issues"
             },
-            "time": "2024-04-05T23:17:01+00:00"
+            "time": "2024-05-22T19:23:16+00:00"
+        },
+        {
+            "name": "nethergamesmc/quiche",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetherGamesMC/PHP-Quiche.git",
+                "reference": "bc0aabb6b053ed615a7d920569a15ba461c48055"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetherGamesMC/PHP-Quiche/zipball/bc0aabb6b053ed615a7d920569a15ba461c48055",
+                "reference": "bc0aabb6b053ed615a7d920569a15ba461c48055",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ffi": "*",
+                "ext-sockets": "*",
+                "ircmaxell/ffime": "dev-master",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "1.10.56",
+                "phpunit/phpunit": "10.5.9"
+            },
+            "default-branch": true,
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "": [
+                        "src"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "A Quiche-based QUIC implementation for PHP",
+            "support": {
+                "issues": "https://github.com/NetherGamesMC/PHP-Quiche/issues",
+                "source": "https://github.com/NetherGamesMC/PHP-Quiche/tree/1.0.0"
+            },
+            "time": "2024-04-15T08:44:11+00:00"
         }
     ],
     "packages-dev": [
